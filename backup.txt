@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="index,follow">
+        <meta name="description" content="Confira esses conteúdos de shopping online, confira tudo a respeito">
+        <meta name="keywords" content="shopping, online, shooping, comprar, vender, produtos">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Links em Iframes e Conteúdo Econômico</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+            }
+
+            #ok {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+                padding: 20px;
+                width: 100%;
+            }
+
+            iframe {
+                width: 100%;
+                max-width: 500px;
+                height: 300px;
+                border: 0;
+            }
+
+            #conteudo {
+                margin-top: 30px;
+                width: 90%;
+                max-width: 800px;
+                padding: 20px;
+                background-color: #222;
+                border-radius: 8px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 2rem;
+                color: #f1f1f1;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #ccc;
+                margin-bottom: 15px;
+            }
+
+            @media (max-width: 768px) {
+                iframe {
+                    max-width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Links em Iframes e Conteúdo Econômico</h1>
+
+        <!-- Seção para os iframes -->
+        <div id="ok">
+            <script>
+                const links = [
+                    "https://victorxx.github.io/redionador1git/",
+                    "https://victorxx.github.io/redirecionadorlinksgit1/",
+                    "https://geocredibnkvitoria.com/",
+                    "https://victorxx.github.io/vpsvendagihubrandom01/",
+                    "https://victorxx.github.io/airbnbrandom01/",
+                    "https://victorxx.github.io/mundogamergih1/",
+                    "https://victorxx.github.io/topicogithub01/randomizador.html",
+                    "https://filmeseserie.com.br/empresa/",
+                    "https://espiritosanto-es.com.br/linhadotempovitoria/",
+                    "https://victorxx.github.io/airbnbrandom01/",
+                    "https://victorxx.github.io/redirecionadorlinksgit1/",
+                    "https://victorxx.github.io/laudobancariogithub/",
+                    "https://victorxx.github.io/redirecionando01001/",
+                    "https://victorxx.github.io/encaminhargithub/saib",
+                    "https://victorxx.github.io/redirecionando001git/"
+                ];
+
+                links.forEach(link => {
+                    const iframe = document.createElement('iframe');
+                    iframe.src = link;
+                    iframe.title = "Iframe com conteúdo de " + link; // Para acessibilidade
+                    iframe.frameBorder = "0";
+                    iframe.style.margin = "10px";
+                    document.getElementById('ok').appendChild(iframe);
+                });
+            </script>
+        </div>
+
+        <!-- Seção para o conteúdo econômico -->
+        <div id="conteudo">
+            <script>
+                const conteudo = [
+                    `Estados Unidos e Europa: A inflação foi uma das maiores preocupações globais após a pandemia de COVID-19. O aumento dos preços de alimentos, energia e serviços levou os bancos centrais a aumentar as taxas de juros. Nos Estados Unidos, o Federal Reserve tem trabalhado para controlar a inflação sem prejudicar demais o crescimento econômico.`,
+                    `Brasil: O Brasil também enfrentou altos índices de inflação, com aumento nos preços de alimentos e combustíveis. O Banco Central Brasileiro subiu a taxa Selic para tentar conter a inflação, mas as taxas ainda estavam elevadas até 2023.`,
+                    `2. Taxas de Juros: Os bancos centrais em várias partes do mundo, incluindo o Federal Reserve dos EUA e o Banco Central Europeu, aumentaram as taxas de juros para combater a inflação. O Brasil também manteve uma taxa de juros alta para tentar conter o aumento dos preços. A alta nas taxas de juros afeta o crédito, tornando empréstimos e financiamentos mais caros, o que pode desacelerar o consumo e os investimentos.`,
+                    `3. Recessão e Crescimento Econômico: Alguns economistas estavam preocupados com uma possível recessão global, principalmente devido ao aumento das taxas de juros e o impacto da guerra na Ucrânia, que gerou uma crise de energia na Europa. Muitos países estavam lutando para equilibrar o crescimento econômico com o controle da inflação. Recuperação Pós-Pandemia: Muitos países estavam tentando se recuperar da recessão econômica causada pela pandemia de COVID-19, e havia um grande debate sobre como as economias poderiam se reestruturar e voltar a crescer.`
+                ];
+
+                // Criando elementos <p> para cada trecho de conteúdo
+                conteudo.forEach(paragrafo => {
+                    const p = document.createElement('p');
+                    p.textContent = paragrafo;
+                    document.getElementById('conteudo').appendChild(p);
+                });
+            </script>
+        </div>
+    </body>
+</html>
